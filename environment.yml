@@ -1,4 +1,0 @@
-name: hld_demo
-dependencies:
-  - numpy
-  - pandas
