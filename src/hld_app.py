@@ -207,10 +207,10 @@ age = st.number_input('What is the age?', min_value=1, max_value=100, value = 40
 tc = st.number_input('What is the Total Cholesterol? (<5.2-normal, >6.2-high)', min_value=0.0, max_value=30.0, value = 4.1 ,step = 0.1)
 
 # hdl 
-hdl = st.number_input('What is the HDL Cholesterol? (Desirable ≥1.6)', min_value=0.0, max_value=10.0, value = 1.1, step = 0.1)
+hdl = st.number_input('What is the HDL Cholesterol? (Desirable ≥1.6)', min_value=0.0, max_value=10.0, value = 1.8, step = 0.1)
 
 # sbp
-sbp = st.number_input('What is the Systolic BP ? (90-210mmHg)', min_value=0, max_value=300, value = 120, step = 1)        
+sbp = st.number_input('What is the Systolic BP ? (90-210mmHg)', min_value=0, max_value=300, value = 150, step = 1)        
 
 # sbp treat
 treat_select = st.radio(
