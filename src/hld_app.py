@@ -7,6 +7,7 @@ import pandas as pd
 from hld_fun import second_hdl_filter, first_hld_filter
 sys.path.append("..")
 st.title('Coronary Disease Risk Stratification')
+st.text("This demo is based on the MOH Clinical Practice Guidelines 2/2016 on Lipids (public source)")
 
 # data
 m_age = pd.read_csv("data/m_age.csv")
