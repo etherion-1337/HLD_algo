@@ -4,19 +4,19 @@ import pandas as pd
 import re
 
 # data
-m_age = pd.read_csv("../data/m_age.csv")
-m_tc = pd.read_csv("../data/m_tc.csv")
-m_smoker = pd.read_csv("../data/m_smoker.csv")
-m_hdl = pd.read_csv("../data/m_hdl.csv")
-m_sbp = pd.read_csv("../data/m_sbp.csv")
-m_total = pd.read_csv("../data/m_total.csv")
+#m_age = pd.read_csv("../data/m_age.csv")
+#m_tc = pd.read_csv("../data/m_tc.csv")
+#m_smoker = pd.read_csv("../data/m_smoker.csv")
+#m_hdl = pd.read_csv("../data/m_hdl.csv")
+#m_sbp = pd.read_csv("../data/m_sbp.csv")
+#m_total = pd.read_csv("../data/m_total.csv")
 
-w_age = pd.read_csv("../data/w_age.csv")
-w_tc = pd.read_csv("../data/w_tc.csv")
-w_smoker = pd.read_csv("../data/w_smoker.csv")
-w_hdl = pd.read_csv("../data/w_hdl.csv")
-w_sbp = pd.read_csv("../data/w_sbp.csv")
-w_total = pd.read_csv("../data/w_total.csv")
+#w_age = pd.read_csv("../data/w_age.csv")
+#w_tc = pd.read_csv("../data/w_tc.csv")
+#w_smoker = pd.read_csv("../data/w_smoker.csv")
+#w_hdl = pd.read_csv("../data/w_hdl.csv")
+#w_sbp = pd.read_csv("../data/w_sbp.csv")
+#w_total = pd.read_csv("../data/w_total.csv")
 
 comorbids_dict = {
     #Prognostic factors taken from MOH HTN CPG 2017 pg 34
@@ -207,15 +207,15 @@ def second_hdl_filter(gender, age, tc, smoke, hdl, sbp, treat_status, race,
     return point,percent
 
 
-gender = "female"
-age = 65
-tc = 4.5
-smoke = "No"
-hdl = 1.3
-sbp = 129
-treat_status = False
-race = "Chinese"
+#gender = "female"
+#age = 65
+#tc = 4.5
+#smoke = "No"
+#hdl = 1.3
+#sbp = 129
+#treat_status = False
+#race = "Chinese"
 
-total_point, cad_percent = second_hdl_filter(gender, age, tc, smoke, hdl, sbp, treat_status, race,
-                     m_age, m_tc, m_smoker, m_hdl, m_sbp, m_total,
-                     w_age, w_tc, w_smoker, w_hdl, w_sbp, w_total)
+#total_point, cad_percent = second_hdl_filter(gender, age, tc, smoke, hdl, sbp, treat_status, race,
+#                     m_age, m_tc, m_smoker, m_hdl, m_sbp, m_total,
+#                     w_age, w_tc, w_smoker, w_hdl, w_sbp, w_total)

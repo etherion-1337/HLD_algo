@@ -1,26 +1,27 @@
+import sys
 import streamlit as st
 # To make things easier later, we're also importing numpy and pandas for
 # working with sample data.
 import numpy as np
 import pandas as pd
 from hld_fun import second_hdl_filter, first_hld_filter
-
+sys.path.append("..")
 st.title('Coronary Disease Risk Stratification')
 
 # data
-m_age = pd.read_csv("../data/m_age.csv")
-m_tc = pd.read_csv("../data/m_tc.csv")
-m_smoker = pd.read_csv("../data/m_smoker.csv")
-m_hdl = pd.read_csv("../data/m_hdl.csv")
-m_sbp = pd.read_csv("../data/m_sbp.csv")
-m_total = pd.read_csv("../data/m_total.csv")
+m_age = pd.read_csv("data/m_age.csv")
+m_tc = pd.read_csv("data/m_tc.csv")
+m_smoker = pd.read_csv("data/m_smoker.csv")
+m_hdl = pd.read_csv("data/m_hdl.csv")
+m_sbp = pd.read_csv("data/m_sbp.csv")
+m_total = pd.read_csv("data/m_total.csv")
 
-w_age = pd.read_csv("../data/w_age.csv")
-w_tc = pd.read_csv("../data/w_tc.csv")
-w_smoker = pd.read_csv("../data/w_smoker.csv")
-w_hdl = pd.read_csv("../data/w_hdl.csv")
-w_sbp = pd.read_csv("../data/w_sbp.csv")
-w_total = pd.read_csv("../data/w_total.csv")
+w_age = pd.read_csv("data/w_age.csv")
+w_tc = pd.read_csv("data/w_tc.csv")
+w_smoker = pd.read_csv("data/w_smoker.csv")
+w_hdl = pd.read_csv("data/w_hdl.csv")
+w_sbp = pd.read_csv("data/w_sbp.csv")
+w_total = pd.read_csv("data/w_total.csv")
 
 
 comorbids_dict = {
